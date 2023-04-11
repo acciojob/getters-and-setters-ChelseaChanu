@@ -18,7 +18,7 @@ class Person {
 	}
 
 	get getAge(){
-		return this.name;
+		return this.age;
 	}
 }
 

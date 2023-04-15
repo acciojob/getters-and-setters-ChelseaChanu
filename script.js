@@ -9,6 +9,10 @@ class Person {
 		this.name = name;
 	}
 
+	/**
+     * @param {number} id
+     */
+
 	set setAge(age){
 		this._age = age;
 	}

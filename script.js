@@ -1,29 +1,21 @@
 //complete this code
 class Person {
-	constructor(name,age){
-		this.name = name;
-		this._age = age;
+	constructor(name, age) {
+	    this._name = name;
+	    this._age = age;
 	}
 	
-	set setName(name){
-		this.name = name;
+	get name() {
+	    return this._name;
 	}
 
-	/**
-     * @param {number} id
-     */
+  set age(age) {
+    this._age = age;
+  }
 
-	set setAge(age){
-		this._age = age;
-	}
-
-	get getName(){
-		return this.name;
-	}
-
-	get getAge(){
-		return this._age;
-	}
+  get age() {
+    return this._age;
+  }
 }
 
 class Student extends Person {
@@ -31,9 +23,9 @@ class Student extends Person {
 		super(name, age); 
 	}
 	
-	study(){
-		console.log(this.name+" is studying");
-	}
+	study() {
+	    console.log(`${this._name} is studying.`);
+    }
 }
 
 class Teacher extends Person {
@@ -41,9 +33,9 @@ class Teacher extends Person {
 		super(name, age); 
 	}
 	
-	teach(){
-		console.log(this.name+" is teaching");
-	}
+	teach() {
+	    console.log(`${this._name} is teaching.`);
+    }
 }
 
 // Do not change the code below this line
